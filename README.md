@@ -53,22 +53,6 @@ Question
 RAG is an external knowledge layer. It does not modify model parameters; it
 adds retrieved evidence to the prompt used by the post-trained model.
 
-## Repository status
-
-| Component | Status | Evidence |
-| --- | --- | --- |
-| SFT data | Available in the private archive | 3,999 cleaned examples |
-| LoRA SFT | Verified | Rank 16, alpha 32, LR `5e-5`, 6 epochs |
-| SFT evaluation | Verified | Saved LLaMA-Factory prediction results |
-| DPO data | Available in the private archive | 2,000 preference pairs |
-| DPO training | Historical implementation | Final config, adapter, and logs were not retained |
-| Final Rank-32 model | Referenced by code | Export path records Rank 32 / LR `1e-4`; weights are missing |
-| Parent–Child indexing | Included | `build_index.py` |
-| Hybrid retrieval | Included | `retrieval.py` |
-| End-to-end chat | Included | `chat.py` |
-| RAGAS evaluation | Recovered in the private archive | Script and 30 QA pairs exist; result CSV is missing |
-| DataInf selection | Recovered in the private archive | Implementation exists; score tensors are missing |
-
 ## Verified SFT results
 
 Evaluation used 535 cleaned test samples. The results below come directly from
@@ -81,8 +65,6 @@ saved LLaMA-Factory output files.
 | ROUGE-2 | 5.66 | 24.74 | +19.08 |
 | ROUGE-L | 17.81 | 39.04 | +21.24 |
 
-No DPO reward or RAG precision/recall number is reported because the original
-result files were not retained.
 
 ## Repository layout
 
