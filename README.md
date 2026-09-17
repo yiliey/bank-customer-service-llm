@@ -201,22 +201,6 @@ base model + SFT LoRA adapter
 
 Do not treat the reconstructed DPO hyperparameters as a historical record.
 
-## Evaluation and data selection
-
-The private archive contains two additional experimental branches that still
-require cleanup before publication:
-
-1. **RAGAS evaluation** — 30 manually specified QA pairs evaluating context
-   precision, context recall, faithfulness, and answer relevancy. The script
-   references the final Rank-32 merged model, but `ragas_results.csv` is absent.
-2. **DataInf selection** — random projection and Woodbury-based influence
-   estimation over LoRA parameters, followed by sample ranking and top-80%
-   filtering. The implementation exists, but `scores.pt` and
-   `ranked_results.json` are absent.
-
-These branches should be described as implemented experiments, not as verified
-quantitative results.
-
 ## Security and publishing notes
 
 - Never commit API keys or `.env` files.
