@@ -201,16 +201,6 @@ base model + SFT LoRA adapter
 
 Do not treat the reconstructed DPO hyperparameters as a historical record.
 
-## Security and publishing notes
-
-- Never commit API keys or `.env` files.
-- Historical scripts contained hard-coded credentials; rotate those keys before
-  publishing any part of the original archive.
-- Do not commit checkpoints, `*.index`, `*.pkl`, crawler output, or private PDFs.
-- Review the licenses of Banking77, Bitext, generated data, and source documents
-  before publishing full datasets.
-- Add a repository license before public release.
-
 ## Acknowledgements
 
 - Qwen2.5-3B-Instruct
