@@ -1,0 +1,11 @@
+accelerate
+faiss-cpu
+jieba
+numpy
+pdfplumber
+peft
+rank-bm25
+sentence-transformers
+torch
+tqdm
+transformers

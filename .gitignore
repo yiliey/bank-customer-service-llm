@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+artifacts/
+data/*.json
+data/*.jsonl
+data/*.csv
+!data/dataset_info.json
+
+# Local models, adapters, indexes, and training artifacts
+models/
+adapters/
+checkpoints/
+*.index
+*.pkl
+outputs/
+saves/

@@ -1,0 +1,45 @@
+### Reconstructed DPO continuation template — not an original experiment record.
+### Replace adapter_name_or_path with the trained SFT LoRA adapter.
+
+### model
+model_name_or_path: Qwen/Qwen2.5-3B-Instruct
+adapter_name_or_path: outputs/sft-rank16-lr5e-5
+trust_remote_code: true
+
+### method
+stage: dpo
+do_train: true
+finetuning_type: lora
+create_new_adapter: false
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: all
+pref_beta: 0.1
+pref_loss: sigmoid
+
+### dataset
+dataset: banking77_dpo
+dataset_dir: data
+template: qwen
+cutoff_len: 1024
+max_samples: 100000
+preprocessing_num_workers: 16
+
+### output
+output_dir: outputs/dpo-from-sft
+logging_steps: 5
+save_steps: 100
+plot_loss: true
+report_to: none
+
+### train
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+learning_rate: 5.0e-6
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+

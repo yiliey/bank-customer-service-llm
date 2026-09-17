@@ -1,0 +1,31 @@
+{
+  "banking77_sft": {
+    "file_name": "bank_sft_final.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "banking77_sft_test": {
+    "file_name": "banking77_sft_test_cleaned.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "banking77_dpo": {
+    "file_name": "bitext_dpo_cleaned.json",
+    "formatting": "sharegpt",
+    "ranking": true,
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  }
+}
+
