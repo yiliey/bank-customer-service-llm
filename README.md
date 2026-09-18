@@ -1,8 +1,10 @@
 # Bank Customer Service LLM Post-training + Hybrid RAG
 
-A domain-adapted Chinese bank customer-service system built on
-Qwen2.5-3B-Instruct. The project combines LoRA post-training with a hybrid
-FAISS/BM25 retriever, BGE reranking, and Parent–Child context expansion.
+An end-to-end Chinese banking dialogue system that answers customer questions
+using domain-adapted language generation and retrieved banking and regulatory
+information. Built on Qwen2.5-3B-Instruct, it combines LoRA fine-tuning with
+hybrid FAISS/BM25 retrieval, BGE reranking, and Parent–Child context expansion
+to generate domain-specific, evidence-grounded responses.
 
 This repository is a cleaned reconstruction of an experimental project. It
 separates verified artifacts from historical components whose runtime outputs
